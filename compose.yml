@@ -1,0 +1,8 @@
+# Local test: docker compose up --build, then open http://localhost:8080 (health: /healthz)
+services:
+  mermaid-live-editor:
+    build: .
+    environment:
+      PORT: "8080"
+    ports:
+      - "8080:8080"

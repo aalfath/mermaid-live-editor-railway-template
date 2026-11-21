@@ -2,6 +2,10 @@
 
 Breaking changes are listed first in each entry.
 
+## 2.0.67-1 (2026-11-21)
+
+- README only: the Deploy on Railway button now links to the published code `mermaid-live-edito-1`. Railway assigned that code at publishing; the old `mermaid-live-editor-1` link answered 404. No change to the image, build or variables.
+
 ## 2.0.67 (2026-11-21)
 
 - First release of the Railway template.

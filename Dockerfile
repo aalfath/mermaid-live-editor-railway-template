@@ -7,11 +7,13 @@
 ARG MLE_VERSION=2.0.67
 ARG MLE_COMMIT=d040b02bf717c3dadcefd11d6e0278ea94f33c11
 
-FROM node:26.13.1-alpine3.24@sha256:6bd9ab43c0ec0190ca7b2d193906cb8b7edf6e7f4afa43ddeccd6452710bffb5 AS build
+FROM node:26.13.1-trixie-slim@sha256:e6bedef217677b276c591795e169840edd9096dbf13f29df8ef8d1856b8820bc AS build
 ARG MLE_COMMIT
 
-# Same build tools as upstream's own Dockerfile (native modules need them).
-RUN apk add --no-cache build-base git python3 \
+# Same build tools as upstream's own Dockerfile (native modules need them), on Debian.
+RUN apt-get update \
+ && apt-get install -y --no-install-recommends ca-certificates git g++ make python3 \
+ && rm -rf /var/lib/apt/lists/* \
  && npm install -g corepack@0.36.0 \
  && corepack enable pnpm
 

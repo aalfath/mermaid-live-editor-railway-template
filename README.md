@@ -1,4 +1,4 @@
-[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/new/template/mermaid-live-editor-1?utm_medium=integration&utm_source=button&utm_campaign=mermaid-live-editor)
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/new/template/mermaid-live-edito-1?utm_medium=integration&utm_source=button&utm_campaign=mermaid-live-editor)
 
 # Mermaid Live Editor on Railway
 
